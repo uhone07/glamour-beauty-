@@ -1,0 +1,95 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enquiry | Glamour Beauty Studio</title>
+        <style>
+            body {
+                background-color: pink;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>Enquiry Page</h1>
+        <p>Welcome to Glamour Beauty Studio's enquiry page.</p>
+    
+    </body>
+    </html>
+    
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/de17a1f33fcc53d746c309cda5cd587a.jpg" alt="Glamour Beauty Studio Logo" width="1000" height="1000">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="enquiry">
+            <h2>Service Enquiry Form</h2>
+            <img src="../assets/MANAGER.jpg" alt="Contact Us" width="400" height="270">
+            
+            <form action="submit-enquiry.php" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Service Interested In:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="facial">Facial Treatments</option>
+                        <option value="hair">Hair Services</option>
+                        <option value="nails">Nail Services</option>
+                        <option value="massage">Massage Therapy</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="Submit Enquiry">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+</body>
+</html>
